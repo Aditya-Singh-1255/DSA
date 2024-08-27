@@ -13,7 +13,7 @@ int main(){
 	int sum = 0, max = INT_MIN, i = 0, j = 0;
     while(j < size){
          sum = sum + arr[j];
-         if((j - i + 1) < k){
+         if((j - i + 1) < k){  // icreasing j until window matches the given window size.
          	j++;
          }else if((j - i + 1) == k){
          	if(sum > max){
@@ -28,3 +28,7 @@ int main(){
     cout<<max<<endl;
 	return 0;
 }
+
+/*
+   
+*/
